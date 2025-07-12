@@ -44,21 +44,21 @@ A secure RESTful API for managing personal tasks, built using Express.js and Mon
 
 ### 🔑 Auth
 
-| Method | Endpoint        | Description           |
-|--------|------------------|-----------------------|
-| POST   | /api/register    | Register a new user   |
-| POST   | /api/login       | Login and get token   |
-| GET    | /api/profile     | Get logged-in user info (protected) |
+| Method | Endpoint              | Description           |
+|--------|-----------------------|-----------------------|
+| POST   | /api/auth/register    | Register a new user   |
+| POST   | /api/auth/login       | Login and get token   |
+| GET    | /api/auth/profile     | Get logged-in user info (protected) |
 
 ### ✅ Tasks (Protected)
 
 | Method | Endpoint        | Description              |
-|--------|------------------|--------------------------|
-| POST   | /api/tasks       | Create new task          |
-| GET    | /api/tasks       | Get all tasks for user   |
-| GET    | /api/tasks/:id   | Get a specific task      |
-| PUT    | /api/tasks/:id   | Update a task            |
-| DELETE | /api/tasks/:id   | Delete a task            |
+|--------|-----------------|--------------------------|
+| POST   | /api/task       | Create new task          |
+| GET    | /api/task       | Get all tasks for user   |
+| GET    | /api/task/:id   | Get a specific task      |
+| PUT    | /api/task/:id   | Update a task            |
+| DELETE | /api/task/:id   | Delete a task            |
 
 🛡️ All task routes require a Bearer token in the Authorization header.
 
